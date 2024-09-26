@@ -18,9 +18,6 @@ def mask_account_card(type_and_number: str) -> str:
         return f"{text_result} {get_mask_card_number(digit_result)}"
 
 
-print(mask_account_card("Maestro 1596837868705199"))
-
-
 def get_date(date_str: str) -> str:
     """Функция принимает строку и возвращает дату в формате ДД.ММ.ГГГГ"""
     date_slice = date_str[0:10].split("-")
