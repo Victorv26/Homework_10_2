@@ -7,7 +7,7 @@ def get_mask_card_number(card_number: Union[int, str]) -> Union[int, str]:
 
 
 if __name__ == "__main__":
-    print(get_mask_card_number(7000792289606361))
+    print(get_mask_card_number())
 
 
 def get_mask_account(count_number: Union[int, str]) -> Union[int, str]:
@@ -16,4 +16,4 @@ def get_mask_account(count_number: Union[int, str]) -> Union[int, str]:
 
 
 if __name__ == "__main__":
-    print(get_mask_account(73654108430135874305))
+    print(get_mask_account())
