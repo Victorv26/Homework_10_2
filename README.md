@@ -8,7 +8,7 @@ Banking_project - это консольное-приложение на Python �
 
 1. Клонируйте репозиторий:
 ```
-git clone https://github.com/Victorv26/Banking_project.git
+git clone git@github.com:Victorv26/Homework_10_2.git
 ```
 2. Установите зависимости:
 ```

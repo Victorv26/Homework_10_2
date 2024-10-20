@@ -13,6 +13,6 @@ def mask_account_card(type_and_number: str) -> str:
 def get_date(date_str: str) -> str:
     """Функция принимает строку и возвращает дату в формате ДД.ММ.ГГГГ"""
     date_slice = date_str[0:10].split("-")
-    if date_str[4] != '-' and date_str[7] != '-':
-        raise ValueError('Неверный формат даты')
+    if date_str[4] != "-" and date_str[7] != "-":
+        raise ValueError("Неверный формат даты")
     return ".".join(date_slice[::-1])

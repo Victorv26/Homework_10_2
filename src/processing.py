@@ -12,7 +12,7 @@ def filter_by_state(list_dict: list, state: str = "EXECUTED") -> list:
     for item in list_dict:
         if item.get("state") == state:
             filtered_list.append(item)
-        elif item.get("state") == None:
+        elif item.get("state") is None:
             filtered_list.append(item)
     return filtered_list
 
