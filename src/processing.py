@@ -12,12 +12,11 @@ def filter_by_state(list_dict: list, state: str = "EXECUTED") -> list:
     for item in list_dict:
         if item.get("state") == state:
             filtered_list.append(item)
+        elif item.get("state") == None:
+            filtered_list.append(item)
     return filtered_list
 
 
 def sort_by_date(list_dict: list, type_sort: bool = True) -> list:
     """Функция, сортирующая список словарей по дате"""
     return sorted(list_dict, key=lambda x: x["date"], reverse=type_sort)
-
-
-print(sort_by_date(list_dict))

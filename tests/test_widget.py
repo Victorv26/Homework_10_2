@@ -1,8 +1,4 @@
-from sqlite3.dbapi2 import paramstyle
-
 import pytest
-from mypy.types import NoneTyp
-
 from src.widget import mask_account_card, get_date
 
 
